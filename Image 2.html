@@ -1,0 +1,252 @@
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "navy": "#000080",
+              "sand": "#EEE4D5",
+              "sand-light": "#fdf2e3",
+              "surface": "#ffffff",
+              "on-surface": "#00003c",
+              "outline": "#645e52",
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>body {
+    font-family: "Manrope", sans-serif
+    }
+h1, h2, h3, h4 {
+    font-family: "Newsreader", serif
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24
+    }
+.bg-sand-texture {
+    background-color: #EEE4D5;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBdXS_NzjT7qZbb03r-vPjXgI80IOTX8WfJb052-dc6b8Oewb4Lp-MYfElaqEEduatpQJvPGR9CTCZuePgpobYzAZrzukvOIPQfkn74sK1wMMtgUkJYeSo4AVaf4S9GII77SzLu0LQ6Zrx4RNcLpatDuazyIErb_S52E_AGUMbMmaKP0pi6mc4cXR2CWUgZXI66WDK8u32WTp1XCbKVVbHAawxzhpLJTCdf8tG-Ls283LenGyhhSnfn5igEpaqEz5L7WfyZ6o79Ox3D)
+    }
+.hero-gradient {
+    background: linear-gradient(rgba(238, 228, 213, 0.9), rgba(238, 228, 213, 0.9)), url(https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80);
+    background-size: cover;
+    background-position: center
+    }</style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-navy/10 selection:text-navy">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-sand">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 overflow-hidden flex items-center justify-center">
+<img alt="Leonardo Agapito Logo" class="w-full h-full object-contain scale-150 transform translate-x-[-20%]" src="https://lh3.googleusercontent.com/aida/ADBb0ugpOGCGsr-JdGwStHBhi09_m2FoJ7iMXh7AU6Jw3pyZYhDbv5D_bwx97Ds6Hh9KvZf_TFERq24FfFIdgFCbSh8s5TKs6rEEGwogIOnIqhpJFSpg8kXsFKQkNknG8JVpQj0qw8lUgLbsgmY1IX15fKtkpRLdhA6l_AypyCsgaSzVHuwGM6aw7CancAoe5zOPtpb__xOFCi_EYDpMnKKsJI1KxZQv4w3fTX8D1_4zXjRqQv-UNb7e9sMTTHac1qX2cGo47iMEvUBKWdM"/>
+</div>
+<span class="text-xl font-headline font-bold text-navy tracking-tight uppercase">Leonardo Agapito</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label uppercase tracking-widest text-[10px] text-navy border-b border-navy pb-1" href="#inicio">Início</a>
+<a class="font-label uppercase tracking-widest text-[10px] text-outline hover:text-navy transition-colors" href="#perfil">Perfil</a>
+<a class="font-label uppercase tracking-widest text-[10px] text-outline hover:text-navy transition-colors" href="#especialidades">Especialidades</a>
+<a class="font-label uppercase tracking-widest text-[10px] text-outline hover:text-navy transition-colors" href="#contato">Contato</a>
+</div>
+<a class="bg-navy text-white px-8 py-3 text-[10px] font-label uppercase tracking-[0.2em] hover:bg-navy/90 transition-all" href="#contato">
+            Consultoria
+        </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center hero-gradient" id="inicio">
+<div class="max-w-7xl mx-auto px-8 w-full py-24">
+<div class="max-w-3xl">
+<span class="inline-block h-px w-16 bg-navy mb-8"></span>
+<p class="text-navy font-label uppercase tracking-[0.3em] text-[11px] mb-6">Excelência Jurídica em Alto Nível</p>
+<h1 class="text-6xl md:text-8xl font-headline leading-[1] mb-10 text-navy italic">
+                Advocacia de <span class="not-italic">Autoridade</span> e Confiança.
+            </h1>
+<p class="text-lg md:text-xl text-navy/80 font-body max-w-xl mb-12 leading-relaxed">
+                Estratégias jurídicas personalizadas com foco em resultados sólidos e ética inabalável. Atuando com rigor técnico e visão humana.
+            </p>
+<div class="flex flex-wrap gap-6">
+<a class="bg-navy text-white px-12 py-5 text-[11px] font-label uppercase tracking-[0.25em] hover:bg-navy/90 transition-all shadow-xl shadow-navy/10" href="#especialidades">
+                    Ver Áreas de Atuação
+                </a>
+<a class="border border-navy/30 text-navy px-12 py-5 text-[11px] font-label uppercase tracking-[0.25em] hover:bg-navy hover:text-white transition-all" href="#contato">
+                    Agendar Reunião
+                </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Profile Section -->
+<section class="py-32 bg-white" id="perfil">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-sand relative overflow-hidden group">
+<img alt="Leonardo Agapito" class="w-full h-full object-cover grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ujnpvt_QSF9sb_qNXBSvrl9mulMndk0S5pD-dCyWm6CMa8VA3UchD5PrO7W6mLLCp_AUh972tLsx_q2h20lNarbPX2rAPkhkWN_0XDoJ-juUsSHZSXy0rgH6eS0u6wZDSR6-ehoscxAwiZLFHuhgPTMlrPEwSbW_HMEr2H9XVIQpuLY5ar24BUzWRX4CzxppXQKl-Imh-2vvSnPFcpai0PDjJgVGvnLcMJtT0tuzx1Yv1JiKMYwaK9Ka1h_h1jjOB6zpi-PDw1_Kw"/>
+<div class="absolute bottom-0 left-0 right-0 bg-navy p-6">
+<p class="text-sand font-headline italic text-2xl">Leonardo Agapito</p>
+<p class="text-sand/70 text-[10px] uppercase tracking-widest mt-1">OAB: 74.789</p>
+</div>
+</div>
+<div class="absolute -z-10 -bottom-8 -right-8 w-full h-full border border-sand translate-x-4 translate-y-4"></div>
+</div>
+<div class="lg:col-span-7">
+<h2 class="text-4xl md:text-5xl font-headline text-navy mb-8">Trajetória Pautada pela <br/><span class="italic">Integridade e Resultados</span></h2>
+<div class="space-y-6 text-outline font-body text-lg leading-relaxed">
+<p>Com anos de experiência no cenário jurídico, Leonardo Agapito consolidou sua prática através do compromisso com a defesa intransigente dos direitos de seus clientes.</p>
+<p>Especializado em lidar com casos de alta complexidade, sua atuação é marcada por um olhar estratégico que antecipa desafios e entrega soluções eficientes em âmbitos consultivos e litigiosos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialties Section -->
+<section class="py-32 bg-sand-texture" id="especialidades">
+<div class="max-w-7xl mx-auto px-8 text-center mb-20">
+<span class="inline-block h-px w-16 bg-navy mb-8"></span>
+<h2 class="text-4xl md:text-5xl font-headline text-navy italic">Áreas de <span class="not-italic">Especialidade</span></h2>
+</div>
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-3 gap-0 border border-navy/10 bg-white">
+<!-- Family Law -->
+<div class="p-12 border-b md:border-b-0 md:border-r border-navy/10 hover:bg-navy group transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-navy group-hover:text-sand mb-8">family_restroom</span>
+<h3 class="text-2xl font-headline text-navy group-hover:text-sand mb-6">Direito da Família</h3>
+<p class="text-outline group-hover:text-sand/80 mb-8 leading-relaxed">Assessoria sensível e técnica em divórcios, partilhas, guarda e sucessões, priorizando a proteção do patrimônio e dos laços afetivos.</p>
+<a class="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-navy group-hover:text-sand" href="#contato">
+                    Saber mais <span class="material-symbols-outlined ml-2 text-xs">arrow_forward</span>
+</a>
+</div>
+<!-- Labor Law -->
+<div class="p-12 border-b md:border-b-0 md:border-r border-navy/10 hover:bg-navy group transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-navy group-hover:text-sand mb-8">work</span>
+<h3 class="text-2xl font-headline text-navy group-hover:text-sand mb-6">Direito do Trabalho</h3>
+<p class="text-outline group-hover:text-sand/80 mb-8 leading-relaxed">Defesa estratégica de direitos trabalhistas, reversão de demissões e compliance para empresas com foco em redução de riscos.</p>
+<a class="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-navy group-hover:text-sand" href="#contato">
+                    Saber mais <span class="material-symbols-outlined ml-2 text-xs">arrow_forward</span>
+</a>
+</div>
+<!-- Consumer Law -->
+<div class="p-12 hover:bg-navy group transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-navy group-hover:text-sand mb-8">shopping_bag</span>
+<h3 class="text-2xl font-headline text-navy group-hover:text-sand mb-6">Direito do Consumidor</h3>
+<p class="text-outline group-hover:text-sand/80 mb-8 leading-relaxed">Atuação firme contra práticas abusivas, danos morais, problemas em compras e falhas na prestação de serviços de grandes empresas.</p>
+<a class="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-navy group-hover:text-sand" href="#contato">
+                    Saber mais <span class="material-symbols-outlined ml-2 text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="absolute -top-12 -left-8 text-sand opacity-20 select-none">
+<span class="text-[200px] leading-none font-headline">“</span>
+</div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="text-3xl font-headline text-navy italic mb-12">O que dizem os clientes</h2>
+<div class="space-y-12">
+<div class="animate-fade-in">
+<p class="text-2xl md:text-3xl font-headline text-navy/80 mb-8 leading-relaxed">
+                        "O Dr. Leonardo conduziu meu caso com uma maestria técnica impressionante. Sua tranquilidade e transparência me deram segurança em um momento muito delicado."
+                    </p>
+<div class="flex items-center justify-center gap-4">
+<div class="h-px w-8 bg-sand"></div>
+<span class="text-[11px] font-label uppercase tracking-widest text-outline">Ricardo S., Empresário</span>
+<div class="h-px w-8 bg-sand"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-navy relative" id="contato">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="text-5xl md:text-6xl font-headline text-sand italic mb-10 leading-tight">Vamos discutir <br/>o seu caso?</h2>
+<p class="text-sand/70 text-lg mb-12 leading-relaxed">
+                    Sua segurança jurídica começa com um contato. Preencha o formulário e nossa equipe entrará em contato para uma análise inicial cuidadosa.
+                </p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-sand">phone</span>
+<div>
+<p class="text-sand font-bold text-sm uppercase tracking-widest mb-1">Contato Direto</p>
+<p class="text-sand/60">(11) 99999-9999<br/>contato@agapito.adv.br</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-12 shadow-2xl">
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-outline mb-2 font-bold" for="name">Nome Completo</label>
+<input class="w-full border-0 border-b border-sand focus:ring-0 focus:border-navy p-3 bg-sand/10" id="name" placeholder="Ex: João Silva" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-outline mb-2 font-bold" for="email">E-mail</label>
+<input class="w-full border-0 border-b border-sand focus:ring-0 focus:border-navy p-3 bg-sand/10" id="email" placeholder="email@exemplo.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-outline mb-2 font-bold" for="phone">Telefone / WhatsApp</label>
+<input class="w-full border-0 border-b border-sand focus:ring-0 focus:border-navy p-3 bg-sand/10" id="phone" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+<div>
+<label class="block text-[10px] uppercase tracking-widest text-outline mb-2 font-bold" for="case">Descrição do Caso</label>
+<textarea class="w-full border-0 border-b border-sand focus:ring-0 focus:border-navy p-3 bg-sand/10 min-h-[120px]" id="case" placeholder="Como podemos ajudar você?"></textarea>
+</div>
+<button class="w-full bg-navy text-white py-5 text-[11px] font-label uppercase tracking-[0.3em] hover:bg-navy/90 transition-all">
+                        Enviar Solicitação
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-sand-texture py-20 border-t border-navy/5">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12 border-b border-navy/10 pb-16">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 overflow-hidden flex items-center justify-center">
+<img alt="Logo" class="w-full h-full object-contain scale-150 transform translate-x-[-20%]" src="https://lh3.googleusercontent.com/aida/ADBb0ugpOGCGsr-JdGwStHBhi09_m2FoJ7iMXh7AU6Jw3pyZYhDbv5D_bwx97Ds6Hh9KvZf_TFERq24FfFIdgFCbSh8s5TKs6rEEGwogIOnIqhpJFSpg8kXsFKQkNknG8JVpQj0qw8lUgLbsgmY1IX15fKtkpRLdhA6l_AypyCsgaSzVHuwGM6aw7CancAoe5zOPtpb__xOFCi_EYDpMnKKsJI1KxZQv4w3fTX8D1_4zXjRqQv-UNb7e9sMTTHac1qX2cGo47iMEvUBKWdM"/>
+</div>
+<span class="text-lg font-headline font-bold text-navy tracking-tight uppercase">Leonardo Agapito</span>
+</div>
+<div class="flex gap-10">
+<a class="text-[10px] uppercase tracking-widest text-outline hover:text-navy" href="#">LinkedIn</a>
+<a class="text-[10px] uppercase tracking-widest text-outline hover:text-navy" href="#">Instagram</a>
+<a class="text-[10px] uppercase tracking-widest text-outline hover:text-navy" href="#">WhatsApp</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-10 gap-6">
+<p class="text-[10px] uppercase tracking-[0.2em] text-outline/60">
+                © 2024 Leonardo Agapito Advocacia. OAB/SP 74.789
+            </p>
+<div class="flex gap-8">
+<a class="text-[9px] uppercase tracking-widest text-outline/60 hover:text-navy" href="#">Privacidade</a>
+<a class="text-[9px] uppercase tracking-widest text-outline/60 hover:text-navy" href="#">Termos de Uso</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
